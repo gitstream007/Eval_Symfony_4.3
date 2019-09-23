@@ -1,0 +1,547 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. Tous droits réservés.
+
+
+
+
+
+
+
+
+
+
+
+
+
+PS F:\ESTIAM\SYMFONY PART2\eval\eval>
+PS F:\ESTIAM\SYMFONY PART2\eval\eval> php bin/console server:run
+
+                                                                                                                        
+ [OK] Server listening on http://127.0.0.1:8000                                                                         
+                                                                                                                        
+
+ // Quit the server with CONTROL-C.
+
+[Mon Sep 23 09:53:21 2019] 127.0.0.1:54613 [404]: /
+[Mon Sep 23 09:53:21 2019] 127.0.0.1:54614 [200]: /_wdt/3019e0
+[Mon Sep 23 09:53:24 2019] 127.0.0.1:54615 [200]: /_profiler/3019e0?panel=logger
+[Mon Sep 23 09:53:31 2019] 127.0.0.1:54617 [404]: /
+[Mon Sep 23 09:53:32 2019] 127.0.0.1:54618 [200]: /_wdt/5d7e1e
+[Mon Sep 23 09:53:34 2019] 127.0.0.1:54619 [404]: /
+[Mon Sep 23 09:53:34 2019] 127.0.0.1:54620 [200]: /_wdt/5bb53a
+[Mon Sep 23 09:55:41 2019] 127.0.0.1:54633 [200]: /_profiler/5bb53a?panel=logger
+PS F:\ESTIAM\SYMFONY PART2\eval\eval> php bin/console server:run
+
+                                                                                                                        
+ [OK] Server listening on http://127.0.0.1:8000                                                                         
+                                                                                                                        
+
+ // Quit the server with CONTROL-C.
+
+[Mon Sep 23 09:56:15 2019] 127.0.0.1:54647 [404]: /
+[Mon Sep 23 09:56:15 2019] 127.0.0.1:54648 [200]: /_wdt/d26662
+[Mon Sep 23 09:56:17 2019] 127.0.0.1:54649 [200]: /_profiler/d26662?panel=logger
+[Mon Sep 23 09:56:45 2019] 127.0.0.1:54651 [404]: /
+[Mon Sep 23 09:56:45 2019] 127.0.0.1:54652 [200]: /_wdt/b1251d
+PS F:\ESTIAM\SYMFONY PART2\eval\eval> php bin/console server:run
+
+                                                                                                                        
+ [OK] Server listening on http://127.0.0.1:8000                                                                         
+                                                                                                                        
+
+ // Quit the server with CONTROL-C.
+
+[Mon Sep 23 09:58:11 2019] 127.0.0.1:54678 [404]: /
+[Mon Sep 23 09:58:11 2019] 127.0.0.1:54679 [200]: /_wdt/f9d4fa
+[Mon Sep 23 09:58:21 2019] 127.0.0.1:54685 [404]: /
+[Mon Sep 23 09:58:22 2019] 127.0.0.1:54686 [200]: /_wdt/69cc16
+PS F:\ESTIAM\SYMFONY PART2\eval\eval> php bin/console server:run
+
+                                                                                                                        
+ [OK] Server listening on http://127.0.0.1:8000                                                                         
+                                                                                                                        
+
+ // Quit the server with CONTROL-C.
+
+[Mon Sep 23 09:59:25 2019] 127.0.0.1:54746 [404]: /
+[Mon Sep 23 09:59:26 2019] 127.0.0.1:54747 [200]: /_wdt/dc4483
+[Mon Sep 23 09:59:28 2019] 127.0.0.1:54749 [200]: /_profiler/dc4483?panel=logger
+PS F:\ESTIAM\SYMFONY PART2\eval\eval> php bin/console make:entity
+
+ Class name of the entity to create or update (e.g. GentlePuppy):
+ > user
+
+ created: src/Entity/User.php
+ created: src/Repository/UserRepository.php
+
+ Entity generated! Now let's add some fields!
+ You can always add more fields later manually or by re-running this command.
+
+ New property name (press <return> to stop adding fields):
+ > name
+
+ Field type (enter ? to see all types) [string]:
+ >
+
+ Field length [255]:
+ >
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ > no
+
+ updated: src/Entity/User.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > no
+
+ Field type (enter ? to see all types) [string]:
+ >
+
+ Field length [255]:
+ >
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/User.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ >
+
+
+           
+  Success! 
+           
+
+ Next: When you're ready, create a migration with make:migration
+
+PS F:\ESTIAM\SYMFONY PART2\eval\eval> php bin/console make:entity
+
+ Class name of the entity to create or update (e.g. OrangeChef):
+ > question
+
+ created: src/Entity/Question.php
+ created: src/Repository/QuestionRepository.php
+
+ Entity generated! Now let's add some fields!
+ You can always add more fields later manually or by re-running this command.
+
+ New property name (press <return> to stop adding fields):
+ > title
+
+ Field type (enter ? to see all types) [string]:
+ >
+
+ Field length [255]:
+ >
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/Question.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > content
+
+ Field type (enter ? to see all types) [string]:
+ > text
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/Question.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ >
+
+
+           
+  Success! 
+           
+
+ Next: When you're ready, create a migration with make:migration
+
+PS F:\ESTIAM\SYMFONY PART2\eval\eval> php bin/console make:entity
+
+ Class name of the entity to create or update (e.g. VictoriousElephant):
+ > answer
+
+ created: src/Entity/Answer.php
+ created: src/Repository/AnswerRepository.php
+
+ Entity generated! Now let's add some fields!
+ You can always add more fields later manually or by re-running this command.
+
+ New property name (press <return> to stop adding fields):
+ > content
+
+ Field type (enter ? to see all types) [string]:
+ > text
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/Answer.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > status
+
+ Field type (enter ? to see all types) [string]:
+ > bool
+
+Main types
+  * string
+  * text
+  * boolean
+  * integer (or smallint, bigint)
+  * float
+
+Relationships / Associations
+  * relation (a wizard will help you build the relation)
+  * ManyToOne
+  * OneToMany
+  * ManyToMany
+  * OneToOne
+
+Array/Object Types
+  * array (or simple_array)
+  * json
+  * object
+  * binary
+  * blob
+
+Date/Time Types
+  * datetime (or datetime_immutable)
+  * datetimetz (or datetimetz_immutable)
+  * date (or date_immutable)
+  * time (or time_immutable)
+  * dateinterval
+
+Other Types
+  * json_array
+  * decimal
+  * guid
+
+                                                                                                                        
+ [ERROR] Invalid type "bool".                                                                                           
+                                                                                                                        
+
+
+ Field type (enter ? to see all types) [string]:
+ > boolean
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/Answer.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ >
+
+
+           
+  Success! 
+           
+
+ Next: When you're ready, create a migration with make:migration
+
+PS F:\ESTIAM\SYMFONY PART2\eval\eval> php bin/console make:entity
+
+ Class name of the entity to create or update (e.g. OrangeKangaroo):
+ > question
+
+ Your entity already exists! So let's add some new fields!
+
+ New property name (press <return> to stop adding fields):
+ > user
+
+ Field type (enter ? to see all types) [string]:
+ > relation
+
+ What class should this entity be related to?:
+ > User
+
+What type of relationship is this?
+ ------------ --------------------------------------------------------------------
+  Type         Description                                                        
+ ------------ --------------------------------------------------------------------
+  ManyToOne    Each Question relates to (has) one User.
+               Each User can relate to (can have) many Question objects
+
+  OneToMany    Each Question can relate to (can have) many User objects.
+               Each User relates to (has) one Question
+
+  ManyToMany   Each Question can relate to (can have) many User objects.
+               Each User can also relate to (can also have) many Question objects
+
+  OneToOne     Each Question relates to (has) exactly one User.
+               Each User also relates to (has) exactly one Question.
+ ------------ --------------------------------------------------------------------
+
+ Relation type? [ManyToOne, OneToMany, ManyToMany, OneToOne]:
+ > ManyToOne
+
+ Is the Question.user property allowed to be null (nullable)? (yes/no) [yes]:
+ > no
+
+ Do you want to add a new property to User so that you can access/update Question objects from it - e.g. $user->getQuestions()? (yes/no) [yes]:
+ > yes
+
+ A new property will also be added to the User class so that you can access the related Question objects from it.
+
+ New field name inside User [questions]:
+ >
+
+ Do you want to activate orphanRemoval on your relationship?
+ A Question is "orphaned" when it is removed from its related User.
+ e.g. $user->removeQuestion($question)
+
+ NOTE: If a Question may *change* from one User to another, answer "no".
+
+ Do you want to automatically delete orphaned App\Entity\Question objects (orphanRemoval)? (yes/no) [no]:
+ >
+
+ updated: src/Entity/Question.php
+ updated: src/Entity/User.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ >
+
+
+           
+  Success! 
+           
+
+ Next: When you're ready, create a migration with make:migration
+
+PS F:\ESTIAM\SYMFONY PART2\eval\eval> php bin/console make:entity
+
+ Class name of the entity to create or update (e.g. GrumpyChef):
+ > Answer
+
+ Your entity already exists! So let's add some new fields!
+
+ New property name (press <return> to stop adding fields):
+ > question
+
+ Field type (enter ? to see all types) [string]:
+ > Question
+
+Main types
+  * string
+  * text
+  * boolean
+  * integer (or smallint, bigint)
+  * float
+
+Relationships / Associations
+  * relation (a wizard will help you build the relation)
+  * ManyToOne
+  * OneToMany
+  * ManyToMany
+  * OneToOne
+
+Array/Object Types
+  * array (or simple_array)
+  * json
+  * object
+  * binary
+  * blob
+
+Date/Time Types
+  * datetime (or datetime_immutable)
+  * datetimetz (or datetimetz_immutable)
+  * date (or date_immutable)
+  * time (or time_immutable)
+  * dateinterval
+
+Other Types
+  * json_array
+  * decimal
+  * guid
+
+                                                                                                                        
+ [ERROR] Invalid type "Question".                                                                                       
+                                                                                                                        
+
+
+ Field type (enter ? to see all types) [string]:
+ > ManyToOne
+
+ What class should this entity be related to?:
+ > Question
+
+ Is the Answer.question property allowed to be null (nullable)? (yes/no) [yes]:
+ >
+
+ Do you want to add a new property to Question so that you can access/update Answer objects from it - e.g. $question->getAnswers()? (yes/no) [yes]:
+ >
+
+ A new property will also be added to the Question class so that you can access the related Answer objects from it.
+
+ New field name inside Question [answers]:
+ >
+
+ updated: src/Entity/Answer.php
+ updated: src/Entity/Question.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ >
+
+
+           
+  Success! 
+           
+
+ Next: When you're ready, create a migration with make:migration
+
+PS F:\ESTIAM\SYMFONY PART2\eval\eval> php bin/console make:migration
+
+In AbstractMySQLDriver.php line 93:
+                                                                                                                                                 
+  An exception occurred in driver: SQLSTATE[HY000] [2002] Aucune connexion na pu tre tablie car lordinateur cible la expressment refuse.  
+                                                                                                                                                 
+
+In PDOConnection.php line 31:
+                                                                                                                
+  SQLSTATE[HY000] [2002] Aucune connexion na pu tre tablie car lordinateur cible la expressment refuse.  
+                                                                                                                
+
+In PDOConnection.php line 27:
+                                                                                                                
+  SQLSTATE[HY000] [2002] Aucune connexion na pu tre tablie car lordinateur cible la expressment refuse.  
+                                                                                                                
+
+make:migration [--db DB] [--em [EM]] [--shard SHARD] [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction] [-e|--env ENV] [--no-debug] [--] <command>
+
+PS F:\ESTIAM\SYMFONY PART2\eval\eval> php bin/console doctrine:migrations:migrate
+
+In AbstractMySQLDriver.php line 93:
+                                                                                                                                                 
+  An exception occurred in driver: SQLSTATE[HY000] [2002] Aucune connexion na pu tre tablie car lordinateur cible la expressment refuse.  
+                                                                                                                                                 
+
+In PDOConnection.php line 31:
+                                                                                                                
+  SQLSTATE[HY000] [2002] Aucune connexion na pu tre tablie car lordinateur cible la expressment refuse.  
+                                                                                                                
+
+In PDOConnection.php line 27:
+                                                                                                                
+  SQLSTATE[HY000] [2002] Aucune connexion na pu tre tablie car lordinateur cible la expressment refuse.  
+                                                                                                                
+
+doctrine:migrations:migrate [--write-sql [WRITE-SQL]] [--dry-run] [--query-time] [--allow-no-migration] [--all-or-nothing [ALL-OR-NOTHING]] [--configuration [CONFIGURATION]] [--db-configuration [DB-CONFIGURATION]] [--db DB] [--em EM] [--shard SHARD] [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction]
+
+
+
+                                                                                                                                                 
+
+In PDOConnection.php line 31:
+                                                                                                                
+  SQLSTATE[HY000] [2002] Aucune connexion na pu tre tablie car lordinateur cible la expressment refuse.  
+                                                                                                                
+
+In PDOConnection.php line 27:
+                                                                                                                
+  SQLSTATE[HY000] [2002] Aucune connexion na pu tre tablie car lordinateur cible la expressment refuse.  
+                                                                                                                
+
+doctrine:database:create [--shard SHARD] [--connection [CONNECTION]] [--if-not-exists] [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction] [-e|--env ENV] [--no-debug] [--] <command>
+
+PS F:\ESTIAM\SYMFONY PART2\eval\eval> php bin/console doctrine:database:create
+Could not create database `bddsymfony` for connection named default
+An exception occurred while executing 'CREATE DATABASE `bddsymfony`':
+
+SQLSTATE[HY000]: General error: 1007 Ne peut créer la base 'bddsymfony'; elle existe déjà
+PS F:\ESTIAM\SYMFONY PART2\eval\eval> php bin/console make:migration
+
+           
+  Success! 
+           
+
+ Next: Review the new migration "src/Migrations/Version20190923083506.php"
+ Then: Run the migration with php bin/console doctrine:migrations:migrate
+ See https://symfony.com/doc/current/bundles/DoctrineMigrationsBundle/index.html
+PS F:\ESTIAM\SYMFONY PART2\eval\eval> php bin/console doctrine:migrations:migrate
+                                                              
+                    Application Migrations                    
+                                                              
+
+WARNING! You are about to execute a database migration that could result in schema changes and data loss. Are you sure you wish to continue? (y/n)y
+Migrating up to 20190923083506 from 0
+
+  ++ migrating 20190923083506
+
+     -> CREATE TABLE answer (id INT AUTO_INCREMENT NOT NULL, question_id INT DEFAULT NULL, content LONGTEXT NOT NULL, status TINYINT(1) NOT NULL, INDEX IDX_DADD4A251E27F6BF (question_id), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci ENGINE = InnoDB
+     -> CREATE TABLE question (id INT AUTO_INCREMENT NOT NULL, user_id INT NOT NULL, title VARCHAR(255) NOT NULL, content LONGTEXT NOT NULL, INDEX IDX_B6F7494EA76ED395 (user_id), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci ENGINE = InnoDB
+     -> CREATE TABLE user (id INT AUTO_INCREMENT NOT NULL, name VARCHAR(255) NOT NULL, no VARCHAR(255) NOT NULL, PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci ENGINE = InnoDB
+     -> ALTER TABLE answer ADD CONSTRAINT FK_DADD4A251E27F6BF FOREIGN KEY (question_id) REFERENCES question (id)
+     -> ALTER TABLE question ADD CONSTRAINT FK_B6F7494EA76ED395 FOREIGN KEY (user_id) REFERENCES user (id)
+
+  ++ migrated (took 160.9ms, used 14M memory)
+
+  ------------------------
+
+  ++ finished in 164.5ms
+  ++ used 14M memory
+  ++ 1 migrations executed
+  ++ 5 sql queries
+PS F:\ESTIAM\SYMFONY PART2\eval\eval>
+
+
+PS F:\ESTIAM\SYMFONY PART2\eval\eval> composer require --dev orm-fixtures
+Using version ^3.2 for doctrine/doctrine-fixtures-bundle
+./composer.json has been updated
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Restricting packages listed in "symfony/symfony" to "4.3.*"
+Package operations: 2 installs, 0 updates, 0 removals
+  - Installing doctrine/data-fixtures (v1.3.2): Loading from cache
+  - Installing doctrine/doctrine-fixtures-bundle (3.2.2): Loading from cache
+Writing lock file
+Generating autoload files
+ocramius/package-versions: Generating version class...
+ocramius/package-versions: ...done generating version class
+Symfony operations: 1 recipe (b149f31e798020e67f8fe56a1fabcdd2)
+  - Configuring doctrine/doctrine-fixtures-bundle (>=3.0): From github.com/symfony/recipes:master
+Executing script cache:clear [OK]
+Executing script assets:install public [OK]
+
+Some files may have been created or updated to configure your new packages.
+Please review, edit and commit them: these files are yours.
+
+PS F:\ESTIAM\SYMFONY PART2\eval\eval> php bin/console make:fixtures UserFixtures
+
+ created: src/DataFixtures/UserFixtures.php
+
+           
+  Success! 
+           
+
+ Next: Open your new fixtures class and start customizing it.
+ Load your fixtures by running: php bin/console doctrine:fixtures:load
+ Docs: https://symfony.com/doc/master/bundles/DoctrineFixturesBundle/index.html
+PS F:\ESTIAM\SYMFONY PART2\eval\eval> php bin/console make:fixtures QuestionFixtures
+
+ created: src/DataFixtures/QuestionFixtures.php
+
+           
+  Success! 
+           
+
+ Next: Open your new fixtures class and start customizing it.
+ Load your fixtures by running: php bin/console doctrine:fixtures:load
+ Docs: https://symfony.com/doc/master/bundles/DoctrineFixturesBundle/index.html
+PS F:\ESTIAM\SYMFONY PART2\eval\eval> php bin/console make:fixtures AnswerFixtures
+
+ created: src/DataFixtures/AnswerFixtures.php
+
+           
+  Success! 
+           
+
+ Next: Open your new fixtures class and start customizing it.
+ Load your fixtures by running: php bin/console doctrine:fixtures:load
+ Docs: https://symfony.com/doc/master/bundles/DoctrineFixturesBundle/index.html
+PS F:\ESTIAM\SYMFONY PART2\eval\eval>
