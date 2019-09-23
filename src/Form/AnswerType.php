@@ -5,6 +5,7 @@ namespace App\Form;
 use App\Entity\Answer;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
 class AnswerType extends AbstractType
@@ -14,7 +15,7 @@ class AnswerType extends AbstractType
         $builder
             ->add('content')
             ->add('status')
-            ->add('question')
+            ->add('question', EntityType::class, array('choice_label' => 'content', 'class'=> 'App\Entity\Question') )
         ;
     }
 
